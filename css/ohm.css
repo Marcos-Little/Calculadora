@@ -1,0 +1,38 @@
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #d3d3d3, #a9a9a9);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.principal{
+    flex: 1;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opcao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+}
+.opcao:hover{
+    cursor: pointer;
+    background-color: rgb(90, 181, 211);
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+.selecao{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+}
