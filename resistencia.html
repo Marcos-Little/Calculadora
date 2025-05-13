@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tensão</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/resistencia.css">
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <h1>Cálculo de Resistência</h1>
+        </header>
+        <div class="botao-voltar">
+            <button type="button"><a href="index.html"><img src="img/de-volta.png" alt="botao-voltar"></a></button>
+        </div>
+        <main class="principal">
+            <div class="calculos">
+                <div class="formula">
+                    <form action="">
+                        <h2>Fórmula 1</h2>
+                            <label for="potencia1">Potência: </label>
+                            <input type="number" name="potencia1" id="potencia1">
+                            <label for="corrente1">Corrente: </label>
+                            <input type="number" name="corrente1" id="corrente1">
+                        <div class="botao">
+                            <button type="submit" onclick="resistencia1()">Calcular</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="formula">
+                    <form action="">
+                        <h2>Fórmula 2</h2>
+                            <label for="potencia2">Potência: </label>
+                            <input type="number" name="potencia2" id="potencia2">
+                            <label for="tensao2">Tensão: </label>
+                            <input type="number" name="tensao2" id="tensao2">
+                        <div class="botao">
+                            <button type="submit" onclick="resistencia2()">Calcular</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="formula">
+                    <form action="">
+                        <h2>Fórmula 3</h2>
+                            <label for="tensao3">Tensão: </label>
+                            <input type="number" name="tensao3" id="tensao3">
+                            <label for="corrente3">Corrente: </label>
+                            <input type="number" name="corrente3" id="corrente3">
+                        <div class="botao">
+                            <button type="submit" onclick="resistencia3()">Calcular</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <ul>
+                <li><img src="img/github.png" alt="Imagem github"></li>
+                <li><img src="img/instagram.png" alt="imagem instagram"></li>
+                <li><img src="img/linkedin.png" alt="imagem linkedin"></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/resistencia.js"></script>
+</body>
+</html>
